@@ -1,77 +1,79 @@
-
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+O desenvolvimento do sistema do Clube de Xadrez do Baleia será conduzido de forma incremental, priorizando inicialmente as funcionalidades essenciais e evoluindo conforme a implementação e os testes.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+A metodologia prevê a utilização de controle de versão, gerenciamento de tarefas, organização do código e testes automatizados. O desenvolvimento será dividido em etapas que permitam acompanhar o progresso e verificar a qualidade de cada funcionalidade antes de incorporá-la à versão estável.
 
 ## Controle de Versão
 
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
+A ferramenta de controle de versão adotada será o [Git](https://git-scm.com/), com hospedagem do repositório no [GitHub](https://github.com/).
 
-O projeto segue a seguinte convenção para o nome de branches:
+O projeto utilizará a seguinte convenção para branches:
 
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
+- `main`: versão estável da aplicação.
+- `unstable`: versão integrada que ainda pode apresentar instabilidades.
+- `testing`: versão destinada à validação das funcionalidades.
+- `dev`: branch principal de desenvolvimento.
+- `feature/<nome>`: branch temporária para o desenvolvimento de uma funcionalidade específica.
+- `fix/<nome>`: branch temporária destinada à correção de problemas.
 
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
+As funcionalidades serão desenvolvidas em branches específicas e integradas à `dev` após uma revisão do código. Quando o conjunto de funcionalidades estiver pronto, será encaminhado para testes. Após a validação, a versão poderá ser incorporada à `main`.
 
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
+Os commits serão escritos de forma objetiva, descrevendo as alterações realizadas. Serão adotados prefixos como `feat` para novas funcionalidades, `fix` para correções, `docs` para documentação, `test` para testes e `refactor` para reorganizações do código sem alteração do comportamento esperado.
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
+As versões estáveis poderão ser identificadas por tags no Git, seguindo uma convenção de versionamento semântico, como `v1.0.0`.
 
-> **Links Úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+O gerenciamento de problemas e tarefas será realizado por meio das Issues do GitHub, utilizando as seguintes etiquetas:
+
+- `documentation`: alterações na documentação.
+- `bug`: correções de defeitos.
+- `enhancement`: melhorias em funcionalidades existentes.
+- `feature`: desenvolvimento de novas funcionalidades.
+
+Por se tratar de um projeto de pequeno porte, o processo será simplificado, mantendo o histórico de alterações, a separação das funcionalidades e a possibilidade de recuperar versões anteriores.
 
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
+O desenvolvimento será conduzido individualmente, com as responsabilidades organizadas da seguinte maneira:
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+| Papel | Responsabilidades |
+|---|---|
+| Desenvolvedor | Levantamento de requisitos, modelagem, implementação do backend e da interface, criação do banco de dados, testes, documentação e implantação. |
+| Responsável pelo projeto | Definição das prioridades, validação das funcionalidades e acompanhamento das necessidades do Clube de Xadrez do Baleia. |
+| Usuários participantes da validação | Utilização das funcionalidades e fornecimento de feedback para identificar problemas e oportunidades de melhoria. |
+
+Os papéis de desenvolvedor e responsável pelo projeto poderão ser exercidos pela mesma pessoa. Os participantes da validação serão envolvidos conforme a disponibilidade e a evolução da aplicação.
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Será adotado um processo incremental inspirado em práticas ágeis, utilizando um backlog de funcionalidades e ciclos curtos de desenvolvimento.
+
+As atividades serão organizadas nas seguintes etapas:
+
+1. **Planejamento:** definição das funcionalidades prioritárias, critérios de aceitação e tarefas.
+2. **Implementação:** desenvolvimento das funcionalidades, seguindo a organização arquitetural e os requisitos definidos.
+3. **Testes:** verificação das regras de negócio, das permissões de acesso e da integração com o banco de dados.
+4. **Revisão:** análise do código, correção de problemas e atualização da documentação.
+5. **Integração:** incorporação das alterações à branch de desenvolvimento.
+6. **Implantação:** preparação e publicação de uma versão funcional para validação.
+
+O andamento será acompanhado por meio de GitHub Issues e, quando necessário, GitHub Projects. As tarefas serão consideradas concluídas quando atenderem aos critérios de aceitação definidos e não apresentarem falhas conhecidas que comprometam seu funcionamento.
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+| Ferramenta | Finalidade |
+|---|---|
+| Visual Studio ou Visual Studio Code | Edição e desenvolvimento do backend e da interface. |
+| C# e ASP.NET Core | Implementação das regras de negócio e da API. |
+| React e JavaScript | Desenvolvimento da interface web. |
+| MySQL | Armazenamento persistente dos dados. |
+| Entity Framework Core | Mapeamento objeto-relacional e acesso ao banco de dados. |
+| Docker e Docker Compose | Conteinerização e execução dos componentes da aplicação. |
+| Git e GitHub | Controle de versão, hospedagem do código e gerenciamento de tarefas. |
+| Swagger/OpenAPI | Documentação e exploração dos endpoints da API. |
+| Postman | Testes manuais das requisições HTTP. |
+| xUnit | Desenvolvimento de testes automatizados para o backend. |
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+As ferramentas foram selecionadas considerando o porte do projeto, a necessidade de manutenção e a possibilidade de desenvolver, testar e executar a solução com uma infraestrutura simples.
