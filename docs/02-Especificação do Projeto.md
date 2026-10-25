@@ -1,109 +1,198 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+Este documento apresenta a especificação do sistema do Clube de Xadrez do Baleia a partir das necessidades de seus usuários. São definidos os perfis de usuários, as histórias de usuário, os requisitos funcionais e não funcionais, as restrições e os casos de uso previstos para a solução.
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A especificação será utilizada como referência para o desenvolvimento da aplicação, a elaboração dos diagramas e a validação das funcionalidades.
 
 ## Personas
 
-Identifique, em torno de, 5 personas. Para cada persona, lembre-se de descrever suas angústicas, frustrações e expectativas de vida relacionadas ao problema. Além disso, defina uma "aparência" para a persona. Para isso, você poderá utilizar sites como [https://this-person-does-not-exist.com/pt#google_vignette](https://this-person-does-not-exist.com/pt) ou https://thispersondoesnotexist.com/ 
+As personas a seguir representam perfis fictícios que poderão utilizar a plataforma. Suas características foram definidas a partir das necessidades previstas para o clube.
 
-Utilize também como referência o exemplo abaixo:
+### Persona 1 — Aluno iniciante
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/IntApplicationProject-Template/blob/main/docs/img/AnaClara1.png" alt="Persona1"/>
+**Nome:** Lucas Oliveira  
+**Idade fictícia:** 13 anos  
+**Perfil:** Escoteiro que está começando a aprender xadrez.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+**Objetivos:** Aprender xadrez, participar de atividades do clube e acompanhar seu desenvolvimento.
 
-> **Links Úteis**:
-> 
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+**Dores e frustrações:** Tem dificuldade para saber quais eventos estão disponíveis e para perceber sua evolução ao longo do tempo.
+
+**Expectativas:** Encontrar facilmente informações sobre aulas, torneios, inscrições e seu próprio rating.
+
+**Aparência visual sugerida:** Adolescente com roupa casual, expressão curiosa e postura descontraída.
+
+**Imagem da persona:** [Inserir imagem da Persona 1]
+
+### Persona 2 — Aluno competitivo
+
+**Nome:** Marina Costa  
+**Idade fictícia:** 17 anos  
+**Perfil:** Jogadora que participa regularmente de partidas e busca melhorar seu desempenho.
+
+**Objetivos:** Acompanhar o rating, analisar os resultados anteriores e participar de torneios.
+
+**Dores e frustrações:** Não ter acesso rápido ao histórico das partidas e precisar consultar diferentes registros para entender sua evolução.
+
+**Expectativas:** Visualizar seu rating atualizado, consultar seu desempenho e acompanhar sua posição no ranking.
+
+**Aparência visual sugerida:** Jovem com tabuleiro de xadrez à frente, expressão concentrada e postura confiante.
+
+**Imagem da persona:** [Inserir imagem da Persona 2]
+
+### Persona 3 — Administrador do clube
+
+**Nome:** Rafael Mendes  
+**Idade fictícia:** 28 anos  
+**Perfil:** Responsável pela organização administrativa do clube.
+
+**Objetivos:** Organizar turmas, gerenciar eventos, manter os cadastros atualizados e registrar resultados.
+
+**Dores e frustrações:** Gastar tempo atualizando informações manualmente e correr o risco de cometer erros nos cálculos ou registros.
+
+**Expectativas:** Administrar as principais atividades em um só lugar, com operações rápidas e informações consistentes.
+
+**Aparência visual sugerida:** Adulto com roupa casual, utilizando um notebook e consultando informações organizacionais.
+
+**Imagem da persona:** [Inserir imagem da Persona 3]
+
+### Persona 4 — Instrutor de xadrez
+
+**Nome:** André Ferreira  
+**Idade fictícia:** 35 anos  
+**Perfil:** Instrutor responsável por acompanhar as aulas e o desenvolvimento dos alunos.
+
+**Objetivos:** Organizar as turmas, acompanhar os participantes e estimular a evolução técnica dos jogadores.
+
+**Dores e frustrações:** Ter dificuldade para identificar o histórico dos alunos e manter as informações das atividades organizadas.
+
+**Expectativas:** Consultar rapidamente as informações das turmas e dos participantes e facilitar o acompanhamento do clube.
+
+**Aparência visual sugerida:** Adulto ao lado de um tabuleiro de xadrez, com postura didática e expressão atenciosa.
+
+**Imagem da persona:** [Inserir imagem da Persona 4]
+
+### Persona 5 — Responsável por um participante
+
+**Nome:** Patrícia Almeida  
+**Idade fictícia:** 42 anos  
+**Perfil:** Responsável por um jovem integrante do clube, interessada em acompanhar sua participação nas atividades.
+
+**Objetivos:** Conhecer os eventos oferecidos, acompanhar informações públicas sobre as atividades e entender o desenvolvimento do participante.
+
+**Dores e frustrações:** Ter dificuldade para encontrar informações atualizadas sobre eventos e atividades.
+
+**Expectativas:** Encontrar informações claras sobre as atividades e facilitar a participação do jovem no clube.
+
+**Aparência visual sugerida:** Adulta com roupa casual, utilizando um celular para consultar informações.
+
+**Imagem da persona:** [Inserir imagem da Persona 5]
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base nas personas identificadas, foram definidas as seguintes histórias de usuário.
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Ana Clara  | Uma forma de identificar se uma agência é realmente confiável           | Me sentir mais segura ao contratar seus serviços               |
-|Ana Clara       | Ter um mecanismo eficiente e rápido de comunicação                 | Que eu possa sanar todas as minhas dúvidas rapidamente |
+### Gerenciamento de usuários e turmas
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+| EU COMO... | QUERO/PRECISO... | PARA... |
+|---|---|---|
+| Administrador | Cadastrar e gerenciar usuários | Manter os participantes registrados e suas informações atualizadas. |
+| Administrador | Criar, editar e desativar turmas | Organizar as atividades de ensino do clube. |
+| Administrador | Vincular alunos às turmas | Controlar a participação dos alunos nas aulas. |
+| Instrutor | Consultar as turmas e seus participantes | Acompanhar as atividades sob minha responsabilidade. |
+| Aluno | Consultar as informações das turmas disponíveis | Conhecer as atividades oferecidas pelo clube. |
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+### Eventos e inscrições
+
+| EU COMO... | QUERO/PRECISO... | PARA... |
+|---|---|---|
+| Administrador | Criar eventos, como torneios e simultâneas | Organizar as atividades esportivas do clube. |
+| Administrador | Adicionar imagens aos eventos | Divulgar as atividades de forma mais atrativa. |
+| Administrador | Consultar os inscritos em cada evento | Organizar a participação dos jogadores. |
+| Aluno | Consultar os eventos disponíveis | Escolher as atividades das quais desejo participar. |
+| Aluno | Inscrever-me e cancelar minha inscrição em eventos | Gerenciar minha participação nas atividades. |
+
+### Partidas, rating e ranking
+
+| EU COMO... | QUERO/PRECISO... | PARA... |
+|---|---|---|
+| Administrador | Registrar o resultado de uma partida entre dois jogadores | Manter o histórico de resultados atualizado. |
+| Administrador | Obter o cálculo automático das variações de rating | Evitar cálculos manuais e reduzir erros. |
+| Aluno | Consultar meu rating e o histórico de partidas | Acompanhar minha evolução no xadrez. |
+| Aluno | Consultar o ranking geral | Conhecer minha posição em relação aos demais jogadores. |
+| Aluno | Visualizar o nome, o ramo e o rating dos participantes no ranking | Comparar as classificações dos jogadores. |
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+Os requisitos funcionais descrevem as ações que a aplicação deverá executar. Os requisitos não funcionais estabelecem as características técnicas e as condições de qualidade da solução.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência| ALTA | 
-|RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio    | ALTA |
-|RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas | ALTA |
+| ID | Descrição do Requisito | Prioridade |
+|---|---|---|
+| RF-001 | A aplicação deve permitir que usuários cadastrados realizem login. | ALTA |
+| RF-002 | A aplicação deve permitir que os administradores cadastrem, consultem, editem e desativem usuários. | ALTA |
+| RF-003 | A aplicação deve permitir que os administradores criem, editem e desativem turmas. | ALTA |
+| RF-004 | A aplicação deve permitir que os administradores vinculem e removam alunos das turmas. | ALTA |
+| RF-005 | A aplicação deve permitir que os usuários consultem as informações das turmas disponíveis. | MÉDIA |
+| RF-006 | A aplicação deve permitir que os administradores criem, editem e cancelem eventos. | ALTA |
+| RF-007 | A aplicação deve permitir que os usuários consultem a lista e os detalhes dos eventos. | ALTA |
+| RF-008 | A aplicação deve permitir que alunos realizem e cancelem suas inscrições em eventos. | ALTA |
+| RF-009 | A aplicação deve permitir que os administradores consultem os inscritos em cada evento. | MÉDIA |
+| RF-010 | A aplicação deve permitir que os administradores registrem os resultados das partidas entre dois jogadores. | ALTA |
+| RF-011 | A aplicação deve calcular automaticamente as variações de rating dos jogadores após o registro válido de uma partida. | ALTA |
+| RF-012 | A aplicação deve manter o histórico dos resultados e das alterações de rating de cada jogador. | ALTA |
+| RF-013 | A aplicação deve disponibilizar um ranking geral dos jogadores, contendo nome, ramo e rating atual. | ALTA |
+| RF-014 | A aplicação deve permitir que os alunos consultem seu próprio histórico de partidas e sua evolução de rating. | ALTA |
+| RF-015 | A aplicação deve permitir o envio de imagens para divulgação dos eventos. | MÉDIA |
+| RF-016 | A aplicação deve restringir as funcionalidades administrativas a usuários autorizados. | ALTA |
+| RF-017 | A aplicação deve impedir inscrições duplicadas do mesmo usuário no mesmo evento. | ALTA |
+| RF-018 | A aplicação deve impedir que partidas inválidas ou já registradas sejam contabilizadas novamente sem uma correção administrativa explícita. | ALTA |
 
-### Requisitos não Funcionais
+### Requisitos Não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+| ID | Descrição do Requisito | Prioridade |
+|---|---|---|
+| RNF-001 | A aplicação deve possuir uma interface responsiva, adaptada a computadores e dispositivos móveis. | ALTA |
+| RNF-002 | As senhas dos usuários devem ser armazenadas utilizando um mecanismo seguro de hash, nunca em texto puro. | ALTA |
+| RNF-003 | O sistema deve implementar autenticação e autorização para proteger os recursos restritos. | ALTA |
+| RNF-004 | A aplicação deve ser dimensionada para até 200 usuários cadastrados e aproximadamente 30 usuários simultâneos. | ALTA |
+| RNF-005 | As operações comuns devem apresentar resposta em até 3 segundos em condições normais de funcionamento, dentro da capacidade prevista para o sistema. | MÉDIA |
+| RNF-006 | O backend deve seguir os princípios SOLID e utilizar uma organização modular que facilite a manutenção. | ALTA |
+| RNF-007 | A aplicação e o banco de dados devem poder ser executados em contêineres Docker. | ALTA |
+| RNF-008 | O sistema deve validar o formato e o tamanho dos arquivos de imagem enviados. | ALTA |
+| RNF-009 | As alterações relacionadas ao rating e ao histórico de partidas devem preservar a integridade dos dados, inclusive em caso de falhas durante uma operação. | ALTA |
+| RNF-010 | A aplicação deve permitir a realização de cópias de segurança do banco de dados. | MÉDIA |
+| RNF-011 | A aplicação deve armazenar somente os dados pessoais necessários para seu funcionamento. | ALTA |
+| RNF-012 | O sistema deve admitir períodos curtos de indisponibilidade, sem exigir disponibilidade ininterrupta. | MÉDIA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+### Restrições
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-## Restrições
-
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+| ID | Restrição |
+|---|---|
+| R-001 | A solução deverá utilizar arquitetura monolítica, sem a divisão do sistema em microsserviços. |
+| R-002 | O banco de dados utilizado deverá ser MySQL. |
+| R-003 | A aplicação e o banco de dados deverão ser conteinerizados utilizando Docker. |
+| R-004 | O envio de arquivos será limitado a imagens, sem suporte ao envio de vídeos. |
+| R-005 | A solução será dimensionada para um ambiente de pequeno porte, com até 200 usuários cadastrados e cerca de 30 usuários simultâneos. |
+| R-006 | O sistema deverá implementar medidas básicas de segurança, sem a necessidade de uma infraestrutura complexa de alta disponibilidade. |
+| R-007 | O algoritmo de rating deverá seguir uma regra definida e documentada, garantindo consistência dos cálculos e rastreabilidade das alterações. |
+| R-008 | O sistema deverá manter um escopo compatível com as necessidades do clube, evitando funcionalidades que não sejam essenciais ao seu funcionamento. |
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama deverá representar os atores e suas interações com a aplicação, delimitando as funcionalidades disponíveis para cada perfil.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+**Atores previstos:**
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+- **Administrador:** gerencia usuários, turmas, eventos, inscrições e registros de partidas.
+- **Aluno:** consulta turmas, acompanha o ranking e a própria evolução, e administra suas inscrições em eventos.
+
+**Casos de uso previstos:**
+
+| Ator | Casos de Uso |
+|---|---|
+| Administrador | Realizar login; gerenciar usuários; gerenciar turmas; vincular alunos; gerenciar eventos; consultar inscritos; registrar partidas; atualizar ratings; consultar ranking. |
+| Aluno | Realizar login; consultar turmas; consultar eventos; inscrever-se em eventos; cancelar inscrição; consultar ranking; consultar histórico e evolução de rating. |
+
+**Imagem do diagrama:** [Inserir diagrama UML de casos de uso na próxima etapa]
