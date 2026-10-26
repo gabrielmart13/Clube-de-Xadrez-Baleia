@@ -1,28 +1,45 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+Este documento será utilizado para registrar as evidências da execução dos casos de teste definidos no Plano de Testes de Software.
 
-Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
+Cada teste deverá apresentar seu requisito associado, o resultado obtido e uma evidência que permita verificar a execução. As evidências poderão incluir capturas de tela, vídeos de execução ou registros técnicos, conforme o tipo de teste.
 
-| **Caso de Teste** 	| **CT01 – Cadastrar perfil** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-|Registro de evidência | www.teste.com.br/drive/ct-01 |
+## Registro das Evidências
 
-| **Caso de Teste** 	| **CT02 – Realizar login** 	|
-|:---:	|:---:	|
-|	Requisito Associado 	| RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+**Situação inicial:** pendente de execução. Os campos abaixo deverão ser atualizados à medida que os testes forem realizados.
 
-## Relatório de testes de software
+| Caso de Teste | Requisito Associado | Resultado | Evidência | Status |
+|---|---|---|---|---|
+| CT01 — Realizar login | RF-001, RF-016, RNF-002 | A preencher | [Inserir link da evidência] | Pendente |
+| CT02 — Gerenciar turmas | RF-003, RF-004, RF-005 | A preencher | [Inserir link da evidência] | Pendente |
+| CT03 — Criar evento com imagem | RF-006, RF-015 | A preencher | [Inserir link da evidência] | Pendente |
+| CT04 — Realizar inscrição em evento | RF-007, RF-008, RF-009, RF-017 | A preencher | [Inserir link da evidência] | Pendente |
+| CT05 — Registrar partida e calcular rating | RF-010, RF-011, RF-012 | A preencher | [Inserir link da evidência] | Pendente |
+| CT06 — Consultar ranking e evolução | RF-013, RF-014 | A preencher | [Inserir link da evidência] | Pendente |
+| CT07 — Corrigir resultado de partida | RF-010, RF-011, RF-012, RF-018 | A preencher | [Inserir link da evidência] | Pendente |
+| CT08 — Validar controle de acesso | RF-016, RNF-003 | A preencher | [Inserir link da evidência] | Pendente |
 
-Apresente e discuta detalhadamente os resultados obtidos nos testes realizados, destacando tanto os pontos fortes quanto as fragilidades identificadas na solução. Explique como os aspectos positivos contribuem para o desempenho e a usabilidade do sistema, e como os pontos fracos impactam sua eficácia.
+O status deverá ser atualizado para **Aprovado**, **Reprovado** ou **Bloqueado**, conforme o resultado efetivamente observado. Quando um teste falhar, deverá ser registrada a descrição da falha e criada uma tarefa de correção.
 
-Descreva as principais falhas detectadas durante os testes, fornecendo exemplos concretos e evidências que sustentem essas observações. Explicite os impactos dessas falhas na experiência do usuário, na funcionalidade do sistema e nos objetivos do projeto.
+## Relatório de Testes de Software
 
-Com base nessas análises, detalhe as estratégias que o grupo pretende adotar para corrigir as deficiências e aprimorar a solução nas próximas iterações. Inclua ações específicas, como ajustes no código, modificações na interface, otimizações de desempenho ou melhorias na acessibilidade e usabilidade.
+O relatório será elaborado após a execução dos casos de teste. Como a aplicação ainda está em fase de planejamento nesta documentação, não existem resultados observados que permitam afirmar que os requisitos foram atendidos ou que falhas específicas foram encontradas.
 
-Por fim, apresente e/ou proponha as melhorias a partir dos testes realizados, destacando os ganhos obtidos e como essas alterações contribuem para a evolução do projeto.
+A avaliação deverá contemplar:
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+**Pontos fortes:** funcionalidades aprovadas, consistência dos dados, aplicação correta das regras de negócio e clareza das respostas da interface.
+
+**Fragilidades:** erros de cálculo, falhas de validação, problemas de autorização, informações inconsistentes e dificuldades de navegação identificadas durante a execução.
+
+**Estratégias de correção:** priorizar falhas que comprometam a segurança, o acesso às funcionalidades essenciais ou a integridade dos registros. Em seguida, corrigir problemas funcionais e de usabilidade e repetir os testes afetados.
+
+**Indicadores de acompanhamento:**
+
+| Indicador | Forma de avaliação |
+|---|---|
+| Taxa de aprovação | Casos aprovados divididos pelo total de casos executados, multiplicados por 100. |
+| Falhas críticas | Quantidade de falhas que comprometem segurança, integridade dos dados ou funções essenciais. |
+| Cobertura dos requisitos | Quantidade de requisitos verificados por testes em relação aos requisitos previstos para validação. |
+| Reincidência de falhas | Quantidade de problemas que voltam a ocorrer após uma correção. |
+
+Os indicadores e as conclusões serão preenchidos com os dados obtidos durante a execução. Após cada correção, os testes relacionados deverão ser repetidos para verificar se o comportamento esperado foi restabelecido.
