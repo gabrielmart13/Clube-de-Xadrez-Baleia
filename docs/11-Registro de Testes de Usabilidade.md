@@ -1,87 +1,119 @@
 # Registro de Testes de Usabilidade
 
-O registro de testes de usabilidade é um documento ou planilha onde são coletadas e organizadas as informações sobre a experiência dos usuários ao interagir com um sistema. Ele inclui dados como tempo de execução de tarefas, taxa de sucesso, dificuldades encontradas, erros cometidos e _feedback_ dos usuários. Esse registro permite identificar padrões de uso, obstáculos/dificuldades encontrados na interface e oportunidades de melhoria, fornecendo _insights_ quantitativos e qualitativos para otimizar a experiência do usuário. Além disso, serve como base para análises, correções e futuras iterações do sistema, garantindo que ele atenda às necessidades do público-alvo de forma eficiente.
+Este documento será utilizado para registrar os resultados dos testes de usabilidade realizados com os participantes do Clube de Xadrez do Baleia.
 
-## Perfil dos usuários que participaram do teste
-- Usuário 1: 45 anos, nível básico incompleto, conhecimento básico tecnologia
-- Usuário 2: 18 anos, nível superior incompleto, conhecimento avançado tecnologia
-- Usuário 1: 70 anos, nível básico incompleto, conhecimento básico tecnologia
-- Usuário 2: 25 anos, nível superior completo, conhecimento avançado tecnologia
-- Usuário 2: 28 anos, nível superior completo, conhecimento avançado tecnologia
+Os registros deverão seguir os cenários definidos no Plano de Testes de Usabilidade. A coleta permitirá identificar dificuldades recorrentes e comparar o desempenho dos participantes na execução das tarefas.
 
-## Exemplo de tabela de registro dos testes de usabilidade  
+## Perfil dos Usuários que Participaram do Teste
 
-Para registrar os indicadores de cada cenário, é preciso manter a coerência com os critérios quantitativos e qualitativos que foram definidos no plano de testes de usabilidade.
+Os participantes deverão ser identificados por códigos, sem registrar nomes ou dados desnecessários para a avaliação.
 
-**Cenário 1**: O usuário deseja comprar um notebook para uso pessoal. Para isso, ele deverá entrar no site www.compras.com.br para buscar opções disponíveis, comparar preços, adicionar o produto ao carrinho e finalizar a compra com pagamento via cartão de crédito.         
-| **Usuário**   | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2    |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3    |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4    |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5    |                    |                                 |                 |                        |                              |                     | 
+| Participante | Perfil de Usuário | Faixa Etária | Familiaridade com Tecnologia |
+|---|---|---|---|
+| P1 | A preencher | A preencher | A preencher |
+| P2 | A preencher | A preencher | A preencher |
+| P3 | A preencher | A preencher | A preencher |
+| P4 | A preencher | A preencher | A preencher |
+| P5 | A preencher | A preencher | A preencher |
 
-**Cenário 2**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+Os perfis e as informações serão preenchidos após a seleção dos participantes. Nenhum resultado ou característica individual deverá ser presumido antes da realização dos testes.
 
-**Cenário 3**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+## Registro dos Cenários
 
-**Cenário 4**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+### Cenário 1 — Encontrar um evento e realizar inscrição
 
-**Cenário 5**:         
-| **Usuário**  | **Tempo Total (seg)** | **Quantidade de cliques** | **Tarefa foi concluída?** (Sim/Não) | **Erros Cometidos** | **Feedback do Usuário** |
-|-------------|--------------------|---------------------------------|-----------------|------------------------|------------------------------|
-| Usuário 1   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 2   |                    |                                 |                 |                        |                              |                     |      
-| Usuário 3   |                    |                                 |                 |                        |                              |                     |  
-| Usuário 4   |                    |                                 |                 |                        |                              |                     | 
-| Usuário 5   |                    |                                 |                 |                        |                              |                     | 
+**Objetivo:** verificar se o participante consegue localizar um evento e concluir sua inscrição.
 
-## Relatório dos testes de usabilidade 
+| Participante | Tempo Total (segundos) | Quantidade de Cliques | Tarefa Concluída? | Erros Cometidos | Feedback do Usuário |
+|---|---:|---:|---|---|---|
+| P1 | — | — | — | — | — |
+| P2 | — | — | — | — | — |
+| P3 | — | — | — | — | — |
+| P4 | — | — | — | — | — |
+| P5 | — | — | — | — | — |
 
-O relatório de testes de usabilidade deve ser um documento claro e estruturado, contendo análises dos testes realizados, identificação de problemas, propostas de correção, melhorias e sugestões para a evolução do sistema. 
-Ele servirá como base para refinamentos no sistema e futuras iterações de testes.
-Deve incluir: 
-- Taxa de sucesso por cenário
-- Tempo médio para completar cada cenário
-- Número médio de erros cometidos por tarefa
-- Taxa de abandono (usuários que não conseguiram concluir a tarefa do cenário)
-- Feedback qualitativo
-  
-A partir disso, organize os resultados e identifique padrões:
-- Principais dificuldades enfrentadas pelos usuários.
-- Quais tarefas foram concluídas sem problemas e quais apresentaram falhas.
-- Sugestões de melhorias para interface, navegação e acessibilidade.
+### Cenário 2 — Consultar o rating e a evolução
 
-Dica: Agrupe problemas em níveis de prioridade:
-- Crítico: Impede o uso do sistema.
-- Moderado: Dificulta a experiência, mas não impede o uso.
-- Leve: Pode ser melhorado, mas não compromete a usabilidade.
+**Objetivo:** verificar se o participante consegue consultar o próprio rating, sua posição no ranking e seu histórico.
 
-Apresente propostas de ações para corrigir os problemas críticos e recorrentes identificados e proponha melhorias incrementais para otimizar a experiência do usuário.
+| Participante | Tempo Total (segundos) | Quantidade de Cliques | Tarefa Concluída? | Erros Cometidos | Feedback do Usuário |
+|---|---:|---:|---|---|---|
+| P1 | — | — | — | — | — |
+| P2 | — | — | — | — | — |
+| P3 | — | — | — | — | — |
+| P4 | — | — | — | — | — |
+| P5 | — | — | — | — | — |
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
+### Cenário 3 — Cadastrar um evento com imagem
 
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+**Objetivo:** verificar se o administrador consegue criar um evento e adicionar sua imagem.
+
+| Participante | Tempo Total (segundos) | Quantidade de Cliques | Tarefa Concluída? | Erros Cometidos | Feedback do Usuário |
+|---|---:|---:|---|---|---|
+| P1 | — | — | — | — | — |
+| P2 | — | — | — | — | — |
+| P3 | — | — | — | — | — |
+| P4 | — | — | — | — | — |
+| P5 | — | — | — | — | — |
+
+### Cenário 4 — Registrar uma partida e verificar o rating
+
+**Objetivo:** verificar se o administrador consegue registrar o resultado de uma partida e identificar as alterações de rating.
+
+| Participante | Tempo Total (segundos) | Quantidade de Cliques | Tarefa Concluída? | Erros Cometidos | Feedback do Usuário |
+|---|---:|---:|---|---|---|
+| P1 | — | — | — | — | — |
+| P2 | — | — | — | — | — |
+| P3 | — | — | — | — | — |
+| P4 | — | — | — | — | — |
+| P5 | — | — | — | — | — |
+
+### Cenário 5 — Criar uma turma e associar um aluno
+
+**Objetivo:** verificar se o administrador consegue cadastrar uma turma e vincular um participante.
+
+| Participante | Tempo Total (segundos) | Quantidade de Cliques | Tarefa Concluída? | Erros Cometidos | Feedback do Usuário |
+|---|---:|---:|---|---|---|
+| P1 | — | — | — | — | — |
+| P2 | — | — | — | — | — |
+| P3 | — | — | — | — | — |
+| P4 | — | — | — | — | — |
+| P5 | — | — | — | — | — |
+
+As células indicadas por `—` deverão ser preenchidas durante os testes, utilizando os valores efetivamente observados. Caso um cenário não seja aplicável ao perfil de determinado participante, essa situação deverá ser registrada, sem atribuir um resultado fictício.
+
+## Relatório dos Testes de Usabilidade
+
+O relatório final será elaborado após a realização dos testes com os participantes. Como a aplicação ainda está em fase de planejamento, não há métricas observadas que permitam apresentar conclusões reais sobre sua usabilidade.
+
+A análise deverá considerar os indicadores definidos no plano de testes.
+
+### Indicadores
+
+| Indicador | Forma de cálculo ou análise |
+|---|---|
+| Taxa de sucesso por cenário | Participantes que concluíram a tarefa divididos pelos participantes que realizaram o cenário, multiplicados por 100. |
+| Tempo médio de execução | Soma dos tempos válidos de conclusão dividida pela quantidade de conclusões válidas. |
+| Média de erros | Total de erros registrados dividido pela quantidade de execuções válidas. |
+| Taxa de abandono | Participantes que abandonaram a tarefa divididos pelos participantes que iniciaram o cenário, multiplicados por 100. |
+| Feedback qualitativo | Agrupamento dos comentários e das dificuldades relatadas pelos participantes. |
+
+Os indicadores deverão ser calculados separadamente para cada cenário. Os testes incompletos e os casos em que o cenário não for aplicável deverão ser identificados para evitar distorções nas métricas.
+
+### Classificação dos Problemas
+
+| Prioridade | Critério | Ação Esperada |
+|---|---|---|
+| Crítica | A dificuldade impede uma tarefa essencial, compromete o acesso ou pode levar à alteração incorreta de dados. | Corrigir antes de disponibilizar a funcionalidade aos usuários. |
+| Moderada | A tarefa pode ser concluída, mas exige esforço excessivo, gera confusão ou provoca erros recorrentes. | Priorizar a correção na próxima iteração. |
+| Leve | A melhoria aumenta a clareza ou o conforto de uso, sem comprometer a conclusão da tarefa. | Planejar a melhoria conforme as prioridades do projeto. |
+
+### Análise e Melhorias
+
+Após a coleta dos dados, serão identificados os cenários com maior tempo de execução, maior quantidade de erros e menor taxa de sucesso. Os comentários dos participantes serão utilizados para localizar elementos pouco claros, informações difíceis de encontrar e etapas desnecessárias.
+
+As melhorias poderão incluir reorganização dos menus, destaque dos botões principais, mensagens de confirmação mais claras, validação imediata dos campos e simplificação dos formulários.
+
+Depois da implementação das correções prioritárias, os cenários afetados deverão ser executados novamente. A comparação entre as duas rodadas permitirá verificar se as alterações reduziram os erros e facilitaram a conclusão das tarefas.
+
+As conclusões finais deverão refletir exclusivamente os dados coletados durante os testes realizados.
