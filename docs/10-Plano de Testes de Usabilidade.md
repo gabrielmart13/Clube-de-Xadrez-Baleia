@@ -1,71 +1,114 @@
 # Plano de Testes de Usabilidade
 
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
+Os testes de usabilidade terão como objetivo avaliar se os usuários conseguem utilizar o sistema do Clube de Xadrez do Baleia de forma simples, eficiente e intuitiva. A avaliação buscará identificar dificuldades de navegação, problemas de compreensão das informações e obstáculos na execução das principais tarefas.
 
-Um plano de teste de usabilidade deverá conter: 
+## Definição dos Objetivos
 
-## Definição do(s) objetivo(s)
+Os testes deverão verificar se os usuários conseguem encontrar eventos, realizar inscrições, consultar o ranking e acompanhar a evolução dos jogadores. Também será avaliada a facilidade com que os administradores realizam operações como criar turmas, cadastrar eventos e registrar partidas.
 
-Antes de iniciar os testes, é essencial definir o que se deseja avaliar na usabilidade do sistema. 
-Alguns exemplos de objetivos são:
-- Verificar se os usuários conseguem concluir tarefas essenciais sem dificuldades.
-- Identificar barreiras na navegação e interação com o sistema.
-- Avaliar a eficiência e a satisfação do usuário ao utilizar a interface.
-- Testar a acessibilidade para diferentes perfis de usuários.
+Serão observados o tempo de execução, a quantidade de cliques, os erros cometidos, a necessidade de ajuda e a percepção dos usuários sobre a interface.
 
-## Seleção dos participantes
+## Seleção dos Participantes
 
-Para garantir que o teste reflita o uso real do sistema, escolha participantes representativos do público-alvo.
+A avaliação contará com pelo menos cinco participantes, buscando representar os principais perfis de usuários da aplicação.
 
-**Critérios para selecionar participantes:**
-- Perfis variados (experientes e iniciantes no sistema).
-- Diferentes níveis de familiaridade com tecnologia.
-- Pessoas com necessidades especiais (se aplicável).
+A composição sugerida é:
 
-**Quantidade recomendada:**
-Mínimo: 5 participantes.
-Ideal: Entre 8 e 12 para maior diversidade.
+- Três alunos com diferentes níveis de conhecimento em xadrez e familiaridade com tecnologia.
+- Um administrador responsável pela organização do clube.
+- Um instrutor ou monitor que acompanhe as atividades dos alunos.
 
-## Definição de cenários de teste
+Os participantes serão identificados por códigos, como P1, P2 e P3, para preservar sua privacidade. Não serão registrados nomes completos ou outras informações pessoais desnecessárias. Caso menores de idade participem, deverão ser observadas as autorizações e medidas de proteção pertinentes.
 
-Os cenários representam tarefas reais que os usuários executam no sistema. Neste projeto, cada grupo deverá definir, no mínimo, **CINCO cenários para a aplicação** e cada cenário deve incluir:
+## Definição dos Cenários de Teste
 
-- Objetivo: O que será avaliado.
-- Contexto: A situação que leva o usuário a interagir com o sistema.
-- Tarefa: A ação que o usuário deve realizar.
-- Critério de sucesso: Como determinar se a tarefa foi concluída corretamente.
+### Cenário 1 — Encontrar um evento e realizar inscrição
 
-**Exemplo: Cenário 1**
+**Objetivo:** avaliar a facilidade para localizar eventos e concluir uma inscrição.
 
-**Objetivo:** Avaliar a facilidade e eficiência do usuário em pesquisar, adicionar um produto ao carrinho e finalizar a compra sem dificuldades.
+**Contexto:** um aluno deseja participar de um torneio organizado pelo clube.
 
-**Contexto:** O usuário deseja comprar um notebook para uso pessoal. Para isso, ele deverá entrar no site www.compras.com.br para buscar opções disponíveis, comparar preços, adicionar o produto ao carrinho e finalizar a compra com pagamento via cartão de crédito.
+**Tarefa:** acessar a lista de eventos, consultar os detalhes de um torneio disponível e realizar sua inscrição.
 
-**Tarefa(s):** 
-- Acessar o site e localizar a barra de pesquisa.
-- Pesquisar por "notebook" e utilizar os filtros para refinar a busca (exemplo: marca, preço, processador).
-- Escolher um dos notebooks listados e acessar a página do produto.
-- Adicionar o produto ao carrinho.
-- Finalizar a compra, preenchendo os dados de pagamento e endereço de entrega.
-- Confirmar a transação e verificar a tela de pedido concluído.
+**Critérios de sucesso:**
+- O participante localiza o evento sem ajuda.
+- Conclui a inscrição corretamente.
+- Consegue identificar a confirmação da inscrição.
+- Conclui a tarefa em até 2 minutos, sem erros que impeçam sua conclusão.
 
-**Critério(s) de Sucesso(s):**
-- O usuário consegue encontrar e filtrar os produtos sem dificuldades.
-- O produto é adicionado ao carrinho corretamente.
-- O usuário consegue preencher as informações de pagamento e entrega sem erros.
-- A compra é finalizada com sucesso, e o usuário visualiza a confirmação do pedido.
-- Todo o processo ocorre em menos de 5 minutos, sem necessidade de assistência.
+### Cenário 2 — Consultar o rating e a evolução
 
-## Métodos de coleta de dados
+**Objetivo:** avaliar a facilidade para consultar o próprio desempenho.
 
-Os dados coletados devem ajudar a entender a experiência dos usuários e os dados podem ser coletados por observação direta incluindo métricas quantitativas (quantidade de cliques, número de erros, tempo gasto para cada tarefa etc.), métricas qualitativas (dificuldades, comentários etc.) e questionários pós-teste (A interface foi fácil de entender? Você encontrou dificuldades em alguma etapa? O que poderia ser melhorado?)
+**Contexto:** um aluno deseja verificar seu rating atual e conferir os resultados de partidas anteriores.
 
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário, deverá ser apresentado).
+**Tarefa:** acessar o ranking, localizar seu nome e abrir as informações de sua evolução.
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+**Critérios de sucesso:**
+- O participante encontra seu rating atual.
+- Identifica sua posição no ranking.
+- Localiza o histórico de partidas e as variações de rating.
+- Conclui a tarefa em até 2 minutos, sem ajuda.
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+### Cenário 3 — Cadastrar um evento com imagem
+
+**Objetivo:** avaliar a facilidade de gerenciamento de eventos.
+
+**Contexto:** um administrador precisa divulgar uma nova simultânea do clube.
+
+**Tarefa:** cadastrar um evento com título, descrição, data, local e imagem.
+
+**Critérios de sucesso:**
+- O participante preenche os campos necessários.
+- Consegue enviar a imagem válida.
+- Salva o evento e verifica se as informações aparecem corretamente.
+- Conclui a tarefa em até 4 minutos, sem ajuda.
+
+### Cenário 4 — Registrar uma partida e verificar o rating
+
+**Objetivo:** avaliar a clareza e a eficiência do processo de registro de partidas.
+
+**Contexto:** um administrador precisa lançar o resultado de uma partida já realizada.
+
+**Tarefa:** selecionar os dois jogadores, informar o resultado e consultar os ratings atualizados.
+
+**Critérios de sucesso:**
+- O participante registra corretamente os jogadores e o resultado.
+- O sistema confirma o registro.
+- O participante consegue identificar as alterações de rating.
+- Conclui a tarefa em até 3 minutos, sem erros que comprometam os dados.
+
+### Cenário 5 — Criar uma turma e associar um aluno
+
+**Objetivo:** avaliar a facilidade para organizar as aulas do clube.
+
+**Contexto:** um administrador precisa criar uma nova turma e adicionar um aluno.
+
+**Tarefa:** cadastrar uma turma, preencher suas informações e associar um participante.
+
+**Critérios de sucesso:**
+- A turma é criada corretamente.
+- O aluno é associado à turma.
+- O participante consegue consultar as informações registradas.
+- Conclui a tarefa em até 4 minutos, sem ajuda.
+
+Os tempos estabelecidos são metas iniciais para avaliação, podendo ser ajustados após os primeiros testes.
+
+## Métodos de Coleta de Dados
+
+A coleta será realizada por observação direta durante a execução das tarefas e por um questionário aplicado ao final de cada sessão.
+
+Serão registrados os seguintes indicadores:
+
+| Indicador | Método |
+|---|---|
+| Tempo de execução | Cronometrar o tempo entre o início e a conclusão da tarefa. |
+| Quantidade de cliques | Contabilizar os cliques necessários para concluir o cenário. |
+| Taxa de conclusão | Verificar se a tarefa foi concluída corretamente. |
+| Erros cometidos | Registrar ações incorretas, tentativas inválidas e dificuldades. |
+| Necessidade de ajuda | Anotar quando o participante precisar de orientação. |
+| Feedback qualitativo | Registrar comentários sobre clareza, facilidade e dificuldades. |
+
+Após os testes, os participantes responderão a perguntas como: a interface foi fácil de entender? Você encontrou dificuldades? As informações estavam organizadas? O que poderia ser melhorado?
+
+Os resultados serão analisados de forma agregada, sem exposição de dados pessoais dos participantes, e utilizados para orientar melhorias na interface e na navegação.
