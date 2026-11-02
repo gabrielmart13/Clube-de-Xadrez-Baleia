@@ -20,10 +20,6 @@ As personas a seguir representam perfis fictícios que poderão utilizar a plata
 
 **Expectativas:** Encontrar facilmente informações sobre aulas, torneios, inscrições e seu próprio rating.
 
-**Aparência visual sugerida:** Adolescente com roupa casual, expressão curiosa e postura descontraída.
-
-**Imagem da persona:** [Inserir imagem da Persona 1]
-
 ### Persona 2 — Aluno competitivo
 
 **Nome:** Marina Costa  
@@ -35,10 +31,6 @@ As personas a seguir representam perfis fictícios que poderão utilizar a plata
 **Dores e frustrações:** Não ter acesso rápido ao histórico das partidas e precisar consultar diferentes registros para entender sua evolução.
 
 **Expectativas:** Visualizar seu rating atualizado, consultar seu desempenho e acompanhar sua posição no ranking.
-
-**Aparência visual sugerida:** Jovem com tabuleiro de xadrez à frente, expressão concentrada e postura confiante.
-
-**Imagem da persona:** [Inserir imagem da Persona 2]
 
 ### Persona 3 — Administrador do clube
 
@@ -52,10 +44,6 @@ As personas a seguir representam perfis fictícios que poderão utilizar a plata
 
 **Expectativas:** Administrar as principais atividades em um só lugar, com operações rápidas e informações consistentes.
 
-**Aparência visual sugerida:** Adulto com roupa casual, utilizando um notebook e consultando informações organizacionais.
-
-**Imagem da persona:** [Inserir imagem da Persona 3]
-
 ### Persona 4 — Instrutor de xadrez
 
 **Nome:** André Ferreira  
@@ -68,10 +56,6 @@ As personas a seguir representam perfis fictícios que poderão utilizar a plata
 
 **Expectativas:** Consultar rapidamente as informações das turmas e dos participantes e facilitar o acompanhamento do clube.
 
-**Aparência visual sugerida:** Adulto ao lado de um tabuleiro de xadrez, com postura didática e expressão atenciosa.
-
-**Imagem da persona:** [Inserir imagem da Persona 4]
-
 ### Persona 5 — Responsável por um participante
 
 **Nome:** Patrícia Almeida  
@@ -83,10 +67,6 @@ As personas a seguir representam perfis fictícios que poderão utilizar a plata
 **Dores e frustrações:** Ter dificuldade para encontrar informações atualizadas sobre eventos e atividades.
 
 **Expectativas:** Encontrar informações claras sobre as atividades e facilitar a participação do jovem no clube.
-
-**Aparência visual sugerida:** Adulta com roupa casual, utilizando um celular para consultar informações.
-
-**Imagem da persona:** [Inserir imagem da Persona 5]
 
 ## Histórias de Usuários
 
@@ -131,7 +111,7 @@ Os requisitos funcionais descrevem as ações que a aplicação deverá executar
 | ID | Descrição do Requisito | Prioridade |
 |---|---|---|
 | RF-001 | A aplicação deve permitir que usuários cadastrados realizem login. | ALTA |
-| RF-002 | A aplicação deve permitir que os administradores cadastrem, consultem, editem e desativem usuários. | ALTA |
+| RF-002 | A aplicação deve permitir que os usuarios se cadastrem no sistema. | ALTA |
 | RF-003 | A aplicação deve permitir que os administradores criem, editem e desativem turmas. | ALTA |
 | RF-004 | A aplicação deve permitir que os administradores vinculem e removam alunos das turmas. | ALTA |
 | RF-005 | A aplicação deve permitir que os usuários consultem as informações das turmas disponíveis. | MÉDIA |
@@ -148,7 +128,7 @@ Os requisitos funcionais descrevem as ações que a aplicação deverá executar
 | RF-016 | A aplicação deve restringir as funcionalidades administrativas a usuários autorizados. | ALTA |
 | RF-017 | A aplicação deve impedir inscrições duplicadas do mesmo usuário no mesmo evento. | ALTA |
 | RF-018 | A aplicação deve impedir que partidas inválidas ou já registradas sejam contabilizadas novamente sem uma correção administrativa explícita. | ALTA |
-
+| RF-019 | A aplicação deve utilizar um sistema de fila para controlar a prioridade de entrada de alunos nas turmas. | MÉDIA |
 ### Requisitos Não Funcionais
 
 | ID | Descrição do Requisito | Prioridade |
