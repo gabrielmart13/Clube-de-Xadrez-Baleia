@@ -1,18 +1,12 @@
 # Template Padrão da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
-
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-**Não se esqueça de:**
-- Definir padrão de cores: definir as cores principais (primárias) e as cores de apoio (secundárias) apresentando a palheta de cores em formato visual e justificando as escolhas (se tiver dúvidas, pesquise mais sobre a teoria das cores)
-- Definir layout padrão e reutilizável: desenvolver um layout base único, que será reutilizado em todas as páginas da aplicação.
-- Definir logo da solução proposta 
-- Definir padrão visual dos componentes: botões, ícones, caixas de mensagens etc.
-
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+<img width="1672" height="941" alt="Painel de Desempenho no Xadrez" src="https://github.com/user-attachments/assets/a2d3dfc2-b582-4942-a8cd-0b5193028c7f" />
+<img width="1672" height="941" alt="Painel da Sala de Aula de Xadrez" src="https://github.com/user-attachments/assets/62e4be25-e212-4ac8-9a2d-470d20605751" />
+<img width="1536" height="1024" alt="Mockup de Login e Cadastro Escoteiro" src="https://github.com/user-attachments/assets/14ba4309-9eb0-425f-813b-c4727af16cc2" />
+<img width="1536" height="1024" alt="Formulário de Criação de Turma de Xadrez" src="https://github.com/user-attachments/assets/3396639b-22bf-45f2-9c8f-cd5d8aec0ef1" />
+<img width="1672" height="941" alt="Eventos do Clube de Xadrez Baleia" src="https://github.com/user-attachments/assets/c60bcda6-b61c-4cdc-8192-8da44a99364b" />
+<img width="1672" height="941" alt="Detalhes do Torneio de Xadrez" src="https://github.com/user-attachments/assets/d6e67e19-5df5-4d49-a32c-a2f5e54ae09c" />
+<img width="1672" height="941" alt="Dashboard de Xadrez com Mascote Baleia" src="https://github.com/user-attachments/assets/daf0dc8b-28d3-468d-9dcf-375b731f689d" />
+<img width="1536" height="1024" alt="Criar Evento de Xadrez do Clube" src="https://github.com/user-attachments/assets/32b13307-4ce4-4773-932a-6c010c31feca" />
+<img width="1536" height="1024" alt="Criar Administrador — Clube de Xadrez" src="https://github.com/user-attachments/assets/b55b7dee-9488-4424-9d99-12a0b9eadc3e" />
+<img width="1536" height="1024" alt="Painel do Clube de Xadrez Escoteiro" src="https://github.com/user-attachments/assets/a81a47cb-0774-48b6-8be8-b244e2aa9106" />
