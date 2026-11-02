@@ -1,23 +1,11 @@
-# TÍTULO DO PROJETO
-
-`CURSO`
-
-`DISCIPLINA`
-
-`SEMESTRE`
+# Clube de Xadrez Baleia
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-
-## Orientador
-
-* Nome completo do professor
+* Gabriel Martins Pinto Coelho
+* Nome completo
 
 ## Instruções de Instalação, Execução e Acesso
 
