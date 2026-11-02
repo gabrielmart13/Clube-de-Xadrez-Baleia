@@ -1,0 +1,6 @@
+@Xadrez_Baleia_HostAddress = http://localhost:5252
+
+GET {{Xadrez_Baleia_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

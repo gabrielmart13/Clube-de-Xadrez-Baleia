@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="ClubeXadrez.Application/XadrezBaleia.Application.csproj" Id="b8244d61-a493-4bcf-9def-181ff6c07a6e" />
+  <Project Path="XadrezBaleia.Domain/XadrezBaleia.Domain.csproj" Id="475ee0bc-25cf-4e26-b50a-a843feed41f5" />
+  <Project Path="XadrezBaleia.Infraestructure/XadrezBaleia.Infraestructure.csproj" Id="4200426a-abac-43a5-b089-b8d00c195d1b" />
+  <Project Path="XadrezBaleia.Tests/XadrezBaleia.Tests.csproj" Id="3879d5f8-6bf3-4672-a5c5-0b47b329ed03" />
+  <Project Path="Xadrez_Baleia/Xadrez_Baleia.csproj" />
+</Solution>
