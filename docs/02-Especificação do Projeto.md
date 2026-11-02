@@ -159,6 +159,53 @@ Os requisitos funcionais descrevem as ações que a aplicação deverá executar
 | R-007 | O algoritmo de rating deverá seguir uma regra definida e documentada, garantindo consistência dos cálculos e rastreabilidade das alterações. |
 | R-008 | O sistema deverá manter um escopo compatível com as necessidades do clube, evitando funcionalidades que não sejam essenciais ao seu funcionamento. |
 
+## Endpoints da API (v1)
+
+A tabela apresenta os 38 endpoints inicialmente previstos para a API do Clube de Xadrez dos Escoteiros do Baleia, organizados por módulo, perfil de acesso, método HTTP e finalidade.
+
+| Módulo | Acesso | Método e endpoint | Finalidade |
+|---|---|---|---|
+| Autenticação | Público | `POST /api/auth/register` | Cadastrar um novo aluno no sistema. |
+| Autenticação | Público | `POST /api/auth/login` | Realizar login e obter autenticação. |
+| Autenticação | Usuário autenticado | `GET /api/auth/me` | Consultar os dados do usuário autenticado e seu nível de acesso. |
+| Usuários | Administrador | `GET /api/users` | Listar os usuários cadastrados. |
+| Usuários | Usuário autenticado | `GET /api/users/me` | Consultar as próprias informações de perfil. |
+| Usuários | Usuário autenticado | `PUT /api/users/me` | Atualizar as próprias informações de perfil. |
+| Ranking e desempenho | Usuário autenticado | `GET /api/rankings` | Consultar o ranking geral dos jogadores. |
+| Ranking e desempenho | Usuário autenticado | `GET /api/rankings/{userId}` | Consultar a posição de um jogador no ranking. |
+| Ranking e desempenho | Usuário autenticado | `GET /api/performance/me` | Consultar o próprio desempenho, rating e estatísticas. |
+| Ranking e desempenho | Usuário autenticado | `GET /api/performance/me/history` | Consultar o histórico de partidas e a evolução do rating. |
+| Turmas | Usuário autenticado | `GET /api/classes` | Listar as turmas disponíveis. |
+| Turmas | Usuário autenticado | `GET /api/classes/{id}` | Consultar os detalhes de uma turma. |
+| Turmas | Administrador | `POST /api/classes` | Criar uma nova turma. |
+| Turmas | Administrador | `PUT /api/classes/{id}` | Editar as informações de uma turma. |
+| Turmas | Administrador | `DELETE /api/classes/{id}` | Desativar uma turma. |
+| Turmas | Administrador | `GET /api/classes/{id}/students` | Consultar os alunos matriculados e a fila de espera da turma. |
+| Turmas | Aluno | `POST /api/classes/{id}/enroll` | Solicitar ingresso em uma turma ou entrar na fila de espera. |
+| Turmas | Aluno | `DELETE /api/classes/{id}/enroll` | Cancelar a matrícula ou desistir da fila de espera. |
+| Turmas | Aluno | `GET /api/classes/{id}/queue/me` | Consultar a própria posição na fila de espera. |
+| Turmas | Administrador | `DELETE /api/classes/{id}/students/{userId}` | Remover um aluno de uma turma. |
+| Eventos | Usuário autenticado | `GET /api/events` | Listar os eventos disponíveis. |
+| Eventos | Usuário autenticado | `GET /api/events/{id}` | Consultar os detalhes de um evento. |
+| Eventos | Administrador | `POST /api/events` | Criar um novo evento. |
+| Eventos | Administrador | `PUT /api/events/{id}` | Editar as informações de um evento. |
+| Eventos | Administrador | `DELETE /api/events/{id}` | Cancelar um evento. |
+| Eventos | Aluno | `POST /api/events/{id}/registrations` | Realizar inscrição em um evento. |
+| Eventos | Aluno | `DELETE /api/events/{id}/registrations/me` | Cancelar a própria inscrição em um evento. |
+| Eventos | Administrador | `GET /api/events/{id}/registrations` | Consultar os inscritos em um evento. |
+| Eventos | Usuário autenticado | `GET /api/events/me/registrations` | Consultar os eventos nos quais está inscrito. |
+| Partidas e resultados | Administrador | `POST /api/matches` | Registrar uma partida entre dois jogadores e calcular as variações de rating. |
+| Partidas e resultados | Administrador | `GET /api/matches` | Consultar as partidas registradas. |
+| Partidas e resultados | Administrador | `PUT /api/matches/{id}` | Corrigir uma partida registrada e recalcular os ratings afetados. |
+| Administradores | Administrador | `GET /api/admins` | Listar os administradores cadastrados. |
+| Administradores | Administrador | `GET /api/admins/{id}` | Consultar um administrador específico. |
+| Administradores | Administrador | `POST /api/admins` | Cadastrar um novo administrador. |
+| Administradores | Administrador | `PUT /api/admins/{id}` | Editar as informações de um administrador. |
+| Administradores | Administrador | `PATCH /api/admins/{id}/status` | Ativar ou desativar um administrador. |
+| Envio de imagens | Administrador | `POST /api/uploads/images` | Enviar imagens para utilização nos eventos. |
+
+**Total: 38 endpoints.**
+
 ## Diagrama de Casos de Uso
 
 O diagrama deverá representar os atores e suas interações com a aplicação, delimitando as funcionalidades disponíveis para cada perfil.
