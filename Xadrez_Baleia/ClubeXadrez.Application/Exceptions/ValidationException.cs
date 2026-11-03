@@ -1,0 +1,10 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace XadrezBaleia.Application.Exceptions
+{
+    public class ValidationException
+    {
+    }
+}
