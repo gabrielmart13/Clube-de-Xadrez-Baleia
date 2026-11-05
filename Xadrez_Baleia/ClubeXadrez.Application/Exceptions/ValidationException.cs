@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XadrezBaleia.Application.Exceptions
 {
-    public class ValidationException
+    public class ValidationException : Exception
     {
     }
 }
