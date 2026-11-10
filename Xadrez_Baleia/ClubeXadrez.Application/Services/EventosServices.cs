@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using XadrezBaleia.Application.Interfaces;
 using XadrezBaleia.Domain.Models;
+using XadrezBaleia.Infraestructure.Repositories;
 
 namespace XadrezBaleia.Application.Services
 {
     public class EventosServices : IEventosService
     {
+        private readonly GeralRepo _geralrepo;
+
+        public EventosService(GeralRepo geralRepo)
+        {
+            _geralrepo = geralRepo;
+        }
         public Task<bool> AtualizarEvento(int id)
         {
             throw new NotImplementedException();

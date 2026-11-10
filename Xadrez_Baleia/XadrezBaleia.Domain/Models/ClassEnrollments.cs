@@ -12,10 +12,10 @@ namespace XadrezBaleia.Domain.Models
         [ForeignKey(nameof(UsuarioId))]
         public Usuarios? Usuario { get; set; }
 
-        public int TurmaId { get; set; }
+        public int ClassesId { get; set; }
 
-        [ForeignKey(nameof(TurmaId))]
-        public Classes? Turma { get; set; }
+        [ForeignKey(nameof(ClassesId))]
+        public Classes? Classes { get; set; }
 
         public string Status { get; set; } = string.Empty;
         public DateTime DataSolicitacao { get; set; }

@@ -10,4 +10,12 @@
     <Folder Include="Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XadrezBaleia.Domain\XadrezBaleia.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
