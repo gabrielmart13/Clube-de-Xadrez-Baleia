@@ -1,11 +1,12 @@
-﻿using XadrezBaleia.Domain.Models;
+﻿using XadrezBaleia.Application.DTOs.Partidas;
+using XadrezBaleia.Domain.Models;
 
 namespace XadrezBaleia.Application.Interfaces
 {
     public interface IPartidasService
     {
-        Task<Partidas> RegistrarPartida();
-        Task<List<Partidas>> ListarPartidas();
+        Task<VisualizarPartidaDTo> RegistrarPartida(CriarPartidaDTO partida);
+        Task<List<VisualizarPartidaDTo>> ListarPartidas();
         Task<bool> CorrigirPartida(int id);
     }
 }

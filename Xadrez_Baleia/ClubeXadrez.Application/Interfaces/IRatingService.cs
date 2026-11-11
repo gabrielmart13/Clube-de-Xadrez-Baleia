@@ -1,12 +1,16 @@
-﻿using XadrezBaleia.Domain.Models;
+﻿
+using XadrezBaleia.Application.DTOs.HistoricoRating;
+using XadrezBaleia.Application.DTOs.Partidas;
+using XadrezBaleia.Application.DTOs.Usuarios;
+using XadrezBaleia.Domain.Models;
 
 namespace XadrezBaleia.Application.Interfaces
 {
     public interface IRatingService
     {
-        Task<List<Usuarios>> ListarTodosRating();
-        Task<Usuarios> ConsultarRatingProprio();
-        Task<List<HistoricoRating>> ConsultarDesempenhoProprio();
-        Task<List<Partidas>> ConsultarHistoricoPartidas();
+        Task<List<VisualizarUsuariosDTO>> ListarTodosRating();
+        Task<VisualizarUsuariosDTO> ConsultarRatingProprio(int id);
+        Task<List<VisualizarHistoricoRatingDTO>> ConsultarDesempenhoProprio(int id);
+        Task<List<VisualizarPartidaDTo>> ConsultarHistoricoPartidas();
     }
 }

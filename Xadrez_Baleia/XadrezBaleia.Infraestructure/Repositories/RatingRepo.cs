@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+using Microsoft.EntityFrameworkCore;
 using XadrezBaleia.Domain.Models;
+using XadrezBaleia.Infrastructure;
 using XadrezBaleia.Infrastructure.Repositories.Interfaces;
 
 namespace XadrezBaleia.Infraestructure.Repositories
@@ -14,24 +14,47 @@ namespace XadrezBaleia.Infraestructure.Repositories
         {
             _context = context;
         }
-        public Task<Usuarios?> ConsultarDesempenhoUsuarios(int id)
+
+        // Consultar os dados de desempenho de um usuário
+        public async Task<Usuarios?> ConsultarDesempenhoUsuarios(int id)
         {
-            throw new NotImplementedException();
+            var ratingusuario = await _context.Usuarios.FindAsync(id);
+            return ratingusuario;
         }
 
-        public Task<List<HistoricoRating>> ConsultarHistoricoDesempenho(int id)
+        // Consultar o histórico de rating de um usuário
+        public async Task<List<HistoricoRating>> ConsultarHistoricoDesempenho(int id)
         {
-            throw new NotImplementedException();
+            var historicos = await _context.HistoricoRating.ToListAsync();
+
+            List<HistoricoRating> historicoUsuario = new List<HistoricoRating>();
+
+            foreach (HistoricoRating h in historicos)
+            {
+                if (h.UsuarioId == id)
+                {
+                    historicoUsuario.Add(h);
+                }
+            }
+
+            return historicoUsuario;
         }
 
-        public Task<Usuarios?> ConsultarUsuarioNoRanking(int id)
+        // Consultar um usuário específico no ranking
+        public async Task<Usuarios?> ConsultarUsuarioNoRanking(int id)
         {
-            throw new NotImplementedException();
+            var usuario = await _context.Usuarios.FindAsync(id);
+            return usuario;
         }
 
-        public Task<List<Usuarios>> ListarUsuariosPorRating()
+        // Listar todos os usuários ordenados pelo rating
+        public async Task<List<Usuarios>> ListarUsuariosPorRating()
         {
-            throw new NotImplementedException();
+            var usuarios = await _context.Usuarios.ToListAsync();
+
+            usuarios.Sort((a, b) => b.Rating.CompareTo(a.Rating));
+
+            return usuarios;
         }
     }
 }

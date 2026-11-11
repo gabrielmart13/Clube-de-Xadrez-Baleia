@@ -1,21 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using XadrezBaleia.Application.DTOs.ClassEnrollments;
+using XadrezBaleia.Application.DTOs.Classes;
 using XadrezBaleia.Application.Interfaces;
 using XadrezBaleia.Domain.Models;
 using XadrezBaleia.Infraestructure.Repositories;
+using XadrezBaleia.Infraestructure.Repositories.Interfaces;
+using XadrezBaleia.Infrastructure.Repositories.Interfaces;
 
 namespace XadrezBaleia.Application.Services
 {
     public class TurmasService : ITurmasService
     {
-        private readonly GeralRepo _geralrepo;
+        private readonly IGeralRepo _geralrepo;
+        private readonly IClassesRepo _classesrepo;
 
-        public TurmasService(GeralRepo geralRepo)
+        public TurmasService(IGeralRepo geralRepo, IClassesRepo classesrepo)
         {
             _geralrepo = geralRepo;
+            _classesrepo = classesrepo;
         }
-        public Task<bool> AtualizarTurma(int id)
+
+        public Task<bool> AtualizarTurma(int id, AtualizarClasseDTO classe)
         {
             throw new NotImplementedException();
         }
@@ -30,12 +37,12 @@ namespace XadrezBaleia.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<Classes?> ConsultarTurma(int id)
+        public Task<VisualizarClassesDTO?> ConsultarTurma(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Classes> CriarTurma()
+        public Task<VisualizarClassesDTO> CriarTurma(CriarClasseDTO classe)
         {
             throw new NotImplementedException();
         }
@@ -45,7 +52,7 @@ namespace XadrezBaleia.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<List<ClassEnrollments>> ListarAlunosTurma(int turmaId)
+        public Task<List<VisualizarSolicitacaoDTO>> ListarAlunosTurma(int turmaId)
         {
             throw new NotImplementedException();
         }
@@ -55,7 +62,7 @@ namespace XadrezBaleia.Application.Services
             throw new NotImplementedException();
         }
 
-        public Task<ClassEnrollments> SolicitarIngresso(int turmaId, int usuarioId)
+        public Task<VisualizarSolicitacaoDTO> SolicitarIngresso(int turmaId, int usuarioId)
         {
             throw new NotImplementedException();
         }

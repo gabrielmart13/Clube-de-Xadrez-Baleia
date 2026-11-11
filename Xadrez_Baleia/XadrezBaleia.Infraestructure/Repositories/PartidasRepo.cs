@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using XadrezBaleia.Domain.Models;
+using XadrezBaleia.Infrastructure;
 using XadrezBaleia.Infrastructure.Repositories.Interfaces;
 
 namespace XadrezBaleia.Infraestructure.Repositories

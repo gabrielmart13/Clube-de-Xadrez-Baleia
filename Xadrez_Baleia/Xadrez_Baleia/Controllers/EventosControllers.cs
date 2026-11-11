@@ -58,7 +58,7 @@ namespace Xadrez_Baleia.Controllers
         // Cancelar a própria inscrição em um evento
         [Authorize]
         [HttpDelete("{id}/registrations/me")]
-        public async Task<ActionResult> Delete(int id)
+        public async Task<ActionResult> DeleteRegistrations(int id)
         {
             throw new NotImplementedException();
         }
@@ -66,7 +66,7 @@ namespace Xadrez_Baleia.Controllers
         // Listar todos os inscritos em um evento
         [Authorize(Roles = "Admin")]
         [HttpGet("{id}/registrations")]
-        public async Task<ActionResult<List<EventRegistros>>> Get(int id)
+        public async Task<ActionResult<List<EventRegistros>>> GetRegistrations(int id)
         {
             throw new NotImplementedException();
         }
@@ -74,7 +74,7 @@ namespace Xadrez_Baleia.Controllers
         // Listar as inscrições do usuário autenticado
         [Authorize]
         [HttpGet("me/registrations")]
-        public async Task<ActionResult<List<EventRegistros>>> Get()
+        public async Task<ActionResult<List<EventRegistros>>> GetMeRegistrations()
         {
             throw new NotImplementedException();
         }
